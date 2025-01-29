@@ -106,7 +106,7 @@ class Display {
 			if($cekServer['data']['status'] != "online"){
 				self::Line();
 				print Display::Error("Status Script is offline\n");
-				exit;
+			//	exit;
 			}
 			$update = ($cekServer['data']['version'] == versi)?false:true;
 			if($update > null){
